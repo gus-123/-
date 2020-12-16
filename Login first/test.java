@@ -7,14 +7,14 @@ import javax.swing.*;
 public class test extends JFrame{
    private JPanel loginPanel = new JPanel(new GridLayout(3, 2));
    private JLabel idLabel = new JLabel("ID"); 
-   private JLabel pwLabel = new JLabel("ºñ¹Ğ¹øÈ£");
+   private JLabel pwLabel = new JLabel("ë¹„ë°€ë²ˆí˜¸");
    private JTextField idText = new JTextField();
    private JPasswordField pwText = new JPasswordField();
-   private JButton loginBtn = new JButton("·Î±×ÀÎ");
-   private JButton idpwSearchBtn = new JButton("È¸¿ø°¡ÀÔ");
+   private JButton loginBtn = new JButton("ë¡œê·¸ì¸");
+   private JButton idpwSearchBtn = new JButton("íšŒì›ê°€ì…");
 
    public test() {
-      super("È¸¿ø°¡ÀÔ");
+      super("ë¡œê·¸ì¸ ì°½");
       
       this.setContentPane(loginPanel);
       loginPanel.add(idLabel);
@@ -40,7 +40,7 @@ public class test extends JFrame{
             String pw = pwText.getText().trim();
             
             if(id.length()==0 || pw.length()==0) {
-               JOptionPane.showMessageDialog(null, "¾ÆÀÌµğ ¶Ç´Â ºñ¹Ğ¹øÈ£¸¦ ÀÔ·Â ÇÏ¼Å¾ß µË´Ï´Ù.", "¾ÆÀÌµğ³ª ºñ¹øÀ» ÀÔ·Â!", JOptionPane.DEFAULT_OPTION);
+               JOptionPane.showMessageDialog(null, "ì•„ì´ë”” ë˜ëŠ” ë¹„ë°€ë²ˆí˜¸ë¥¼ ì…ë ¥ í•˜ì…”ì•¼ ë©ë‹ˆë‹¤.", "ì•„ì´ë””ë‚˜ ë¹„ë²ˆì„ ì…ë ¥!", JOptionPane.DEFAULT_OPTION);
                return;
             }
             
@@ -49,7 +49,7 @@ public class test extends JFrame{
                return;
             }
             
-	JOptionPane.showMessageDialog(null, "·Î±×ÀÎ ½ÇÆĞ", "·Î±×ÀÎ È®ÀÎ!", JOptionPane.DEFAULT_OPTION);
+	JOptionPane.showMessageDialog(null, "ë¡œê·¸ì¸ ì‹¤íŒ¨", "ë¡œê·¸ì¸ í™•ì¸!", JOptionPane.DEFAULT_OPTION);
             
          }
       });
