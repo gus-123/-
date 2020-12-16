@@ -1,4 +1,4 @@
-
+///Copyright 2020 Hyun Min///
 import java.awt.*;
 import java.awt.event.*;
 
