@@ -16,10 +16,10 @@ import javax.swing.JMenuBar;
 import javax.swing.JOptionPane;
 
 import java.awt.Font;
-//import javax.imageio.ImageIO; Robot ¾È¾²´Â Ä¸ÃÄ¹æ½Ä
-//import java.io.File; Robot ¾È¾²´Â Ä¸ÃÄ¹æ½Ä
-//import java.io.IOException; Robot ¾È¾²´Â Ä¸ÃÄ¹æ½Ä
-//import java.awt.image.BufferedImage; Robot ¾È¾²´Â Ä¸ÃÄ¹æ½Ä
+//import javax.imageio.ImageIO; Robot ì•ˆì“°ëŠ” ìº¡ì³ë°©ì‹
+//import java.io.File; Robot ì•ˆì“°ëŠ” ìº¡ì³ë°©ì‹
+//import java.io.IOException; Robot ì•ˆì“°ëŠ” ìº¡ì³ë°©ì‹
+//import java.awt.image.BufferedImage; Robot ì•ˆì“°ëŠ” ìº¡ì³ë°©ì‹
 import java.awt.Dimension;
 import java.awt.Rectangle;
 import java.awt.Robot;
@@ -66,7 +66,7 @@ public class store {
 		ImageIcon img3;
 		ImageIcon img4;
 		
-		frame = new JFrame("Ä³¸¯ÅÍ »óÁ¡");
+		frame = new JFrame("ìºë¦­í„° ìƒì ");
 		frame.setBounds(100, 100, 717, 345);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		GridBagLayout gridBagLayout = new GridBagLayout();
@@ -83,7 +83,7 @@ public class store {
 		BufferedImage img = new BufferedImage(160, 160, BufferedImage.TYPE_INT_RGB );
 		
 		JLabel lblNewLabel_2 = new JLabel("\uC0C1\uC810\uC5D0 \uC624\uC2E0\uAC78 \uD658\uC601\uD569\uB2C8\uB2E4!!");
-		lblNewLabel_2.setFont(new Font("HY±×·¡ÇÈM", Font.BOLD, 15));
+		lblNewLabel_2.setFont(new Font("HYê·¸ë˜í”½M", Font.BOLD, 15));
 		GridBagConstraints gbc_lblNewLabel_2 = new GridBagConstraints();
 		gbc_lblNewLabel_2.gridwidth = 7;
 		gbc_lblNewLabel_2.insets = new Insets(0, 0, 5, 5);
@@ -118,8 +118,8 @@ public class store {
 		gbc_lblNewLabel_3.gridy = 3;
 		frame.getContentPane().add(lblNewLabel_3, gbc_lblNewLabel_3);
 		
-		JButton btnNewButton = new JButton("±¸¸Å");
-		btnNewButton.setFont(new Font("HY½Å¸íÁ¶", Font.BOLD | Font.ITALIC, 12));
+		JButton btnNewButton = new JButton("êµ¬ë§¤");
+		btnNewButton.setFont(new Font("HYì‹ ëª…ì¡°", Font.BOLD | Font.ITALIC, 12));
 		GridBagConstraints gbc_btnNewButton = new GridBagConstraints();
 		gbc_btnNewButton.insets = new Insets(0, 0, 5, 5);
 		gbc_btnNewButton.gridx = 6;
@@ -129,15 +129,15 @@ public class store {
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				lblNewLabel_1_1.setIcon(img1);
-				Object[] option = {"È®ÀÎ"};
-				int complete = JOptionPane.showOptionDialog
-						(null, "±¸¸Å ¿Ï·áµÇ¾ú½À´Ï´Ù!","±¸¸Å ¿Ï·á È®ÀÎÃ¢"
-								, JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, null, option, option[0]);
+				Object[] option = {"í™•ì¸"};     //Made by Kim Soo-na
+  				int complete = JOptionPane.showOptionDialog     
+						(null, "êµ¬ë§¤ ì™„ë£Œë˜ì—ˆìŠµë‹ˆë‹¤!","êµ¬ë§¤ ì™„ë£Œ í™•ì¸ì°½"
+								, JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, null, option, option[0]);     //Made by Kim Soo-na
 			}
 		});
 		
-		JButton btnNewButton_1 = new JButton("Àû¿ë");
-		btnNewButton_1.setFont(new Font("HY½Å¸íÁ¶", Font.BOLD | Font.ITALIC, 12));
+		JButton btnNewButton_1 = new JButton("ì ìš©");
+		btnNewButton_1.setFont(new Font("HYì‹ ëª…ì¡°", Font.BOLD | Font.ITALIC, 12));
 		GridBagConstraints gbc_btnNewButton_1 = new GridBagConstraints();
 		gbc_btnNewButton_1.insets = new Insets(0, 0, 5, 5);
 		gbc_btnNewButton_1.gridx = 8;
@@ -147,10 +147,10 @@ public class store {
 		btnNewButton_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				lblNewLabel_1_1.setIcon(img4);
-				Object[] option = {"È®ÀÎ"};
+				Object[] option = {"í™•ì¸"};     //Made by Kim Soo-na
 				int complete = JOptionPane.showOptionDialog
-						(null, "Àû¿ë ¿Ï·áµÇ¾ú½À´Ï´Ù!","Àû¿ë ¿Ï·á È®ÀÎÃ¢"
-								, JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, null, option, option[0]);
+						(null, "ì ìš© ì™„ë£Œë˜ì—ˆìŠµë‹ˆë‹¤!","ì ìš© ì™„ë£Œ í™•ì¸ì°½"
+								, JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, null, option, option[0]);     //Made by Kim Soo-na
 				try {
 					Robot robot = new Robot();
 					int x = 133;
@@ -171,8 +171,8 @@ public class store {
 			}
 		});
 		
-		JButton btnNewButton_2 = new JButton("±¸¸Å");
-		btnNewButton_2.setFont(new Font("HY½Å¸íÁ¶", Font.BOLD | Font.ITALIC, 12));
+		JButton btnNewButton_2 = new JButton("êµ¬ë§¤");
+		btnNewButton_2.setFont(new Font("HYì‹ ëª…ì¡°", Font.BOLD | Font.ITALIC, 12));
 		GridBagConstraints gbc_btnNewButton_2 = new GridBagConstraints();
 		gbc_btnNewButton_2.insets = new Insets(0, 0, 5, 5);
 		gbc_btnNewButton_2.gridx = 12;
@@ -182,15 +182,15 @@ public class store {
 		btnNewButton_2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				lblNewLabel_1.setIcon(img2);
-				Object[] option = {"È®ÀÎ"};
+				Object[] option = {"í™•ì¸"};     //Made by Kim Soo-na
 				int complete = JOptionPane.showOptionDialog
-						(null, "±¸¸Å ¿Ï·áµÇ¾ú½À´Ï´Ù!","±¸¸Å ¿Ï·á È®ÀÎÃ¢"
-								, JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, null, option, option[0]);
+						(null, "êµ¬ë§¤ ì™„ë£Œë˜ì—ˆìŠµë‹ˆë‹¤!","êµ¬ë§¤ ì™„ë£Œ í™•ì¸ì°½"
+								, JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, null, option, option[0]);     //Made by Kim Soo-na
 			}
 		});
 		
-		JButton btnNewButton_3 = new JButton("Àû¿ë");
-		btnNewButton_3.setFont(new Font("HY½Å¸íÁ¶", Font.BOLD | Font.ITALIC, 12));
+		JButton btnNewButton_3 = new JButton("ì ìš©");
+		btnNewButton_3.setFont(new Font("HYì‹ ëª…ì¡°", Font.BOLD | Font.ITALIC, 12));
 		GridBagConstraints gbc_btnNewButton_3 = new GridBagConstraints();
 		gbc_btnNewButton_3.insets = new Insets(0, 0, 5, 5);
 		gbc_btnNewButton_3.gridx = 13;
@@ -200,10 +200,10 @@ public class store {
 		btnNewButton_3.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				lblNewLabel_1.setIcon(img4);
-				Object[] option = {"È®ÀÎ"};
+				Object[] option = {"í™•ì¸"};     //Made by Kim Soo-na
 				int complete = JOptionPane.showOptionDialog
-						(null, "Àû¿ë ¿Ï·áµÇ¾ú½À´Ï´Ù!","Àû¿ë ¿Ï·á È®ÀÎÃ¢"
-								, JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, null, option, option[0]);
+						(null, "ì ìš© ì™„ë£Œë˜ì—ˆìŠµë‹ˆë‹¤!","ì ìš© ì™„ë£Œ í™•ì¸ì°½"
+								, JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, null, option, option[0]);     //Made by Kim Soo-na
 				try {
 					Robot robot = new Robot();
 					int x = 355;
@@ -223,8 +223,8 @@ public class store {
 		});
 		
 		
-		JButton btnNewButton_2_1 = new JButton("±¸¸Å");
-		btnNewButton_2_1.setFont(new Font("HY½Å¸íÁ¶", Font.BOLD | Font.ITALIC, 12));
+		JButton btnNewButton_2_1 = new JButton("êµ¬ë§¤");
+		btnNewButton_2_1.setFont(new Font("HYì‹ ëª…ì¡°", Font.BOLD | Font.ITALIC, 12));
 		GridBagConstraints gbc_btnNewButton_2_1 = new GridBagConstraints();
 		gbc_btnNewButton_2_1.insets = new Insets(0, 0, 5, 5);
 		gbc_btnNewButton_2_1.gridx = 16;
@@ -234,15 +234,15 @@ public class store {
 		btnNewButton_2_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				lblNewLabel_3.setIcon(img3);
-				Object[] option = {"È®ÀÎ"};
+				Object[] option = {"í™•ì¸"};     //Made by Kim Soo-na
 				int complete = JOptionPane.showOptionDialog
-						(null, "±¸¸Å ¿Ï·áµÇ¾ú½À´Ï´Ù!","±¸¸Å ¿Ï·á È®ÀÎÃ¢"
-								, JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, null, option, option[0]);
+						(null, "êµ¬ë§¤ ì™„ë£Œë˜ì—ˆìŠµë‹ˆë‹¤!","êµ¬ë§¤ ì™„ë£Œ í™•ì¸ì°½"
+								, JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, null, option, option[0]);     //Made by Kim Soo-na
 			}
 		});
 		
-		JButton btnNewButton_3_1 = new JButton("Àû¿ë");
-		btnNewButton_3_1.setFont(new Font("HY½Å¸íÁ¶", Font.BOLD | Font.ITALIC, 12));
+		JButton btnNewButton_3_1 = new JButton("ì ìš©");
+		btnNewButton_3_1.setFont(new Font("HYì‹ ëª…ì¡°", Font.BOLD | Font.ITALIC, 12));
 		GridBagConstraints gbc_btnNewButton_3_1 = new GridBagConstraints();
 		gbc_btnNewButton_3_1.insets = new Insets(0, 0, 5, 5);
 		gbc_btnNewButton_3_1.gridx = 17;
@@ -252,10 +252,10 @@ public class store {
 		btnNewButton_3_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				lblNewLabel_3.setIcon(img4);
-				Object[] option = {"È®ÀÎ"};
+				Object[] option = {"í™•ì¸"};     //Made by Kim Soo-na
 				int complete = JOptionPane.showOptionDialog
-						(null, "Àû¿ë ¿Ï·áµÇ¾ú½À´Ï´Ù!","Àû¿ë ¿Ï·á È®ÀÎÃ¢"
-								, JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, null, option, option[0]);
+						(null, "ì ìš© ì™„ë£Œë˜ì—ˆìŠµë‹ˆë‹¤!","ì ìš© ì™„ë£Œ í™•ì¸ì°½"
+								, JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, null, option, option[0]);     //Made by Kim Soo-na
 				try {
 					Robot robot = new Robot();
 					int x = 590;
