@@ -101,7 +101,7 @@ public class Start {
 			}
 		});
 		
-		JButton btnNewButton_1 = new JButton("");
+		JButton btnNewButton_1 = new JButton("종료");
 		btnNewButton_1.setFont(new Font("HY신명조", Font.BOLD | Font.ITALIC, 12));
 		GridBagConstraints gbc_btnNewButton_1 = new GridBagConstraints();
 		gbc_btnNewButton_1.insets = new Insets(0, 0, 5, 5);
