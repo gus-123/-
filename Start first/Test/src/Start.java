@@ -68,9 +68,9 @@ public class Start {
 		img1 = new ImageIcon("../images/4.PNG");
 		BufferedImage img = new BufferedImage(160, 160, BufferedImage.TYPE_INT_RGB );
 		
-		JLabel lblNewLabel_2 = new JLabel("  À¯¾Æ¿ë °ÔÀÓ");
+		JLabel lblNewLabel_2 = new JLabel("  ìœ ì•„ìš© ê²Œìž„");
 		lblNewLabel_2.setForeground(Color.WHITE);
-		lblNewLabel_2.setFont(new Font("HY±×·¡ÇÈM", Font.BOLD, 25));
+		lblNewLabel_2.setFont(new Font("HYê·¸ëž˜í”½M", Font.BOLD, 25));
 		GridBagConstraints gbc_lblNewLabel_2 = new GridBagConstraints();
 		gbc_lblNewLabel_2.gridwidth = 7;
 		gbc_lblNewLabel_2.insets = new Insets(0, 0, 5, 5);
@@ -87,8 +87,8 @@ public class Start {
 		gbc_lblNewLabel_1_1.gridy = 3;
 		frame.getContentPane().add(lblNewLabel_1_1, gbc_lblNewLabel_1_1);
 		
-		JButton btnNewButton = new JButton("½ÃÀÛ");
-		btnNewButton.setFont(new Font("HY½Å¸íÁ¶", Font.BOLD | Font.ITALIC, 12));
+		JButton btnNewButton = new JButton("ì‹œìž‘");
+		btnNewButton.setFont(new Font("HYì‹ ëª…ì¡°", Font.BOLD | Font.ITALIC, 12));
 		GridBagConstraints gbc_btnNewButton = new GridBagConstraints();
 		gbc_btnNewButton.insets = new Insets(0, 0, 5, 5);
 		gbc_btnNewButton.gridx = 8;
@@ -97,11 +97,12 @@ public class Start {
 		
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				new test();
 			}
 		});
 		
-		JButton btnNewButton_1 = new JButton("Àû¿ë");
-		btnNewButton_1.setFont(new Font("HY½Å¸íÁ¶", Font.BOLD | Font.ITALIC, 12));
+		JButton btnNewButton_1 = new JButton("");
+		btnNewButton_1.setFont(new Font("HYì‹ ëª…ì¡°", Font.BOLD | Font.ITALIC, 12));
 		GridBagConstraints gbc_btnNewButton_1 = new GridBagConstraints();
 		gbc_btnNewButton_1.insets = new Insets(0, 0, 5, 5);
 		gbc_btnNewButton_1.gridx = 10;
@@ -110,6 +111,7 @@ public class Start {
 		
 		btnNewButton_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
 				}
 		});
 	}
