@@ -56,8 +56,8 @@ public class test extends JFrame{
       
       idpwSearchBtn.addActionListener(new ActionListener() {
          public void actionPerformed(ActionEvent e) {
-	      new GUI();
-              return;         
+	      //new GUI();
+              //return;         
          }
       });
       
