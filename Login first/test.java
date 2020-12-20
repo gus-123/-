@@ -56,6 +56,8 @@ public class test extends JFrame{
       
       idpwSearchBtn.addActionListener(new ActionListener() {
          public void actionPerformed(ActionEvent e) {
+	      JOptionPane.showMessageDialog(null, "아직 만들어지지 않았습니다."
+						+ "", "회원가입", JOptionPane.DEFAULT_OPTION); 
 	      //new GUI();
               //return;         
          }
